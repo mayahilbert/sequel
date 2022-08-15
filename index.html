@@ -203,7 +203,7 @@
   <!-- Swiper -->
   <div class="swiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide">
+      <div class="swiper-slide" data-hash="1">
         <div class="nav-wrapper">
           <div class="nav">
             <span class="nma-link"><a href="">New Media Artspace</a></span><span class="exhibition-title">Sarada Rauch: If All Things Were Equal, You'd Only Be the Sequel</span><span class="about-link"><a href="">About
@@ -213,14 +213,14 @@
           placerat
           turpis metus, <span class="slide-text-link">id porttitor nisi gravida vulputate</span>.</p>
       </div>
-      <div class="swiper-slide slide-video-link">
+      <div class="swiper-slide slide-video-link" data-hash="2">
         <iframe src="https://player.vimeo.com/video/519844657?h=4c8da210d3&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
       </div>
-      <div class="swiper-slide">
+      <div class="swiper-slide" data-hash="3">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt ante justo. Sed iaculis, leo ac euismod cursus, turpis tellus feugiat tellus, quis maximus urna nisl at dui. Duis placerat
           turpis metus, <span class="slide-text-link">id porttitor nisi gravida vulputate</span>.</p>
       </div>
-      <div class="swiper-slide slide-video-link">
+      <div class="swiper-slide slide-video-link" data-hash="4">
         <iframe src="https://player.vimeo.com/video/519844657?h=4c8da210d3&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
@@ -242,6 +242,7 @@
       mousewheel: true,
       speed: 800,
       rewind: true,
+      hashNavigation: true,
       pagination: {
         el: ".swiper-pagination",
         type: "progressbar",
