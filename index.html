@@ -70,9 +70,8 @@
     .slide-text-link,
     a {
       cursor: pointer;
-      color: #E8DBB9;
-      /* color: #A08938; */
-
+      /* color: #E8DBB9; */
+      color: #A08938;
       transition: 1s;
       opacity: 1;
       text-decoration: none;
@@ -80,7 +79,11 @@
 
     .slide-text-link:hover,
     a:hover {
-      opacity: 0.4;
+      opacity: 0.7;
+    }
+
+    .slide-text-link.red-link {
+      color: #DE6B48;
     }
 
     .slide-video-link {
@@ -92,22 +95,25 @@
 
     .swiper-wrapper>div:nth-child(odd) {
       /*green and yellow*/
-      background-color: #453e1f;
-      color: #A08938;
+      background-color: #383319;
+      color: #E8DBB9;
+      /* color: #A08938; */
+
       /* blue and yellow*/
       /* background-color: #222E50;
       color: #D7CF07; */
     }
 
     .swiper-wrapper>div:nth-child(even) {
-      background-color: #212011;
+      background-color: #1B1A0E;
       color: #A08938;
     }
 
     .swiper-slide p {
       max-width: 720px;
-      font-size: 2.1em;
+      font-size: 2.3em;
       padding: 1em;
+      text-align: left;
     }
 
     iframe {
@@ -121,22 +127,28 @@
       justify-content: space-between;
       width: 100%;
       opacity: 0.7;
-      /* letter-spacing: 0.08em; */
+      /* text-transform: uppercase;*/
+      letter-spacing: 0.05em;
     }
 
-    .nav a {
+    /* .nav a {
       opacity: 0.6;
     }
 
     .nav a:hover {
       opacity: 0.4;
-    }
+    } */
 
     .nav-wrapper {
       position: absolute;
       top: 1em;
       width: 95vw;
     }
+
+    .nav span {
+      padding: 10px;
+    }
+
 
     .down-arrow-container {
       position: fixed;
@@ -150,7 +162,6 @@
 
     }
 
-    .down-arrow {}
 
     .down-arrow:after {
       content: "";
@@ -159,7 +170,7 @@
       height: 20px;
       left: 50%;
       top: 50%;
-      border-width: 0 1px 1px 0;
+      border-width: 0 2px 2px 0;
       border-style: solid;
       transform: rotate(45deg);
       transform-origin: 10px 10px;
@@ -171,11 +182,11 @@
 
     @media only screen and (max-width: 600px) {
       .nav {
-        flex-direction: column
+        flex-direction: column;
       }
 
-      .nav span {
-        padding: 10px;
+      p.first-text {
+        padding-top: 5em;
       }
 
       .swiper-slide p {
@@ -198,7 +209,7 @@
             <span class="nma-link"><a href="">New Media Artspace</a></span><span class="exhibition-title">Sarada Rauch: If All Things Were Equal, You'd Only Be the Sequel</span><span class="about-link"><a href="">About
                 the Exhibition</a></span></div>
         </div>
-        <p class="rellax" data-rellax-speed="-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt ante justo. Sed iaculis, leo ac euismod cursus, turpis tellus feugiat tellus, quis maximus urna nisl at dui. Duis
+        <p class="first-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt ante justo. Sed iaculis, leo ac euismod cursus, turpis tellus feugiat tellus, quis maximus urna nisl at dui. Duis
           placerat
           turpis metus, <span class="slide-text-link">id porttitor nisi gravida vulputate</span>.</p>
       </div>
@@ -230,6 +241,7 @@
       slidesPerView: 1,
       mousewheel: true,
       speed: 800,
+      rewind: true,
       pagination: {
         el: ".swiper-pagination",
         type: "progressbar",
