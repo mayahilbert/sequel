@@ -68,10 +68,10 @@
     }
 
     .slide-text-link:hover {
-      -webkit-text-fill-color: transparent;
+      /* -webkit-text-fill-color: transparent;
       -webkit-text-stroke-width: 0.9px;
       -webkit-text-stroke-color: #A08938;
-      letter-spacing: 2px;
+      letter-spacing: 2px; */
     }
 
     a:hover {
