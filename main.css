@@ -6,7 +6,11 @@
 
     body {
       background: #212011;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+      /* -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 0.3px;
+      -webkit-text-stroke-color: white;
+      letter-spacing: 0.2em; */
       font-size: 14px;
       margin: 0;
       padding: 0;
@@ -63,7 +67,13 @@
       text-decoration: none;
     }
 
-    .slide-text-link:hover,
+    .slide-text-link:hover {
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 0.9px;
+      -webkit-text-stroke-color: #A08938;
+      letter-spacing: 2px;
+    }
+
     a:hover {
       opacity: 0.7;
     }
@@ -79,7 +89,7 @@
       width: 100%;
     }
 
-    .swiper-wrapper>div:nth-child(odd) {
+    .swiper-wrapper>div:nth-child(even) {
       /*green and yellow*/
       background-color: #383319;
       color: #E8DBB9;
@@ -89,16 +99,27 @@
       color: #D7CF07; */
     }
 
-    .swiper-wrapper>div:nth-child(even) {
+    .swiper-wrapper>div:nth-child(odd) {
       background-color: #1B1A0E;
       color: #A08938;
     }
 
-    .swiper-slide p {
+    /* .swiper-slide p.first-text {
       max-width: 720px;
-      font-size: 2.3em;
+      font-size: 1em;
       padding: 1em;
       text-align: left;
+      font-weight: 200;
+      max-width: 800px;
+      font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+    } */
+    .swiper-slide p {
+      max-width: 720px;
+      font-size: 2.5em;
+      padding: 1em;
+      text-align: left;
+      letter-spacing: 1px;
+      font-family: 'Bebas Neue', Helvetica, Arial, sans-serif;
     }
 
     iframe {
@@ -111,8 +132,45 @@
       justify-content: space-between;
       width: 100%;
       opacity: 0.7;
-      /* text-transform: uppercase;*/
-      letter-spacing: 0.05em;
+      font-size: 1em;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .nav-home {
+      align-items: center;
+      height: 100%;
+      opacity: 1;
+      font-size: 1em;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .nav-home span a {
+      letter-spacing: 0.07em;
+    }
+
+    .exhibition-title-home {
+      letter-spacing: 0.04em;
+      max-width: 700px;
+      font-size: 4em;
+      line-height: 1.1em;
+      font-family: 'Bebas Neue', Helvetica, Arial, sans-serif;
+      /* color: white; */
+    }
+
+    .stroke-white {
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 0.2px;
+      /* -webkit-text-stroke-color: #E8DBB9; */
+      -webkit-text-stroke-color: white;
+    }
+
+    .stroke-yellow {
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #A08938;
+      /* -webkit-text-stroke-color: white; */
     }
 
     /* .nav a {
@@ -126,6 +184,7 @@
       position: absolute;
       top: 1em;
       width: 95vw;
+      height: 100%;
     }
 
     .nav span {
@@ -150,7 +209,7 @@
       height: 20px;
       left: 50%;
       top: 50%;
-      border-width: 0 2px 2px 0;
+      border-width: 0 1px 1px 0;
       border-style: solid;
       transform: rotate(45deg);
       transform-origin: 10px 10px;
@@ -160,7 +219,44 @@
       transform: translate(0, 10px);
     }
 
+    .nav-small {
+      opacity: 0.5;
+      transition: 1s;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 1.2em;
+      font-weight: 400;
+      font-family: 'Bebas Neue', Helvetica, sans-serif;
+    }
+
+    .nav-small .about-link {
+      padding-right: 1em;
+    }
+
+    .nav-small-wrapper {
+      position: fixed;
+      top: 0px;
+      width: 100%;
+      z-index: 100;
+    }
+
+    .nav-small:hover {
+      opacity: 0.7;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .nav-home {
+        flex-direction: column;
+        height: 86%;
+        justify-content: space-around;
+      }
+    }
+
     @media only screen and (max-width: 600px) {
+      .exhibition-title-home {
+        font-size: 3.4em;
+      }
+
       .nav {
         flex-direction: column;
       }
@@ -172,9 +268,17 @@
       .swiper-slide p {
         font-size: 1.6em;
       }
+
+      .nav-small span {
+        margin: 0 2em;
+      }
     }
 
     @media only screen and (max-width: 360px) {
+      .exhibition-title-home {
+        font-size: 2.8em;
+      }
+
       .swiper-slide p {
         font-size: 1.3em;
       }
