@@ -74,6 +74,7 @@
       letter-spacing: 2px; */
     }
 
+    .slide-text-link:hover,
     a:hover {
       opacity: 0.7;
     }
