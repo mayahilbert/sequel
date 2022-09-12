@@ -84,12 +84,7 @@
       font-size: 3em;
       text-align: left;
       letter-spacing: 1px;
-      font-family: 'Bebas Neue', Helvetica, Arial, sans-serif;
-    }
-
-    .swiper-slide p.first-text {
-      padding: 1vw;
-      font-size: 9.5vw;
+      font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
     }
 
     .nav-wrapper {
@@ -117,6 +112,36 @@
 
     .nav span a {
       letter-spacing: 0.07em;
+    }
+
+    .about-link {
+      display: flex;
+      flex-direction: column;
+      padding: 0.3em 0;
+    }
+
+    .about-link:hover .about-top-link, .about-link:hover .about-bottom-link {
+      opacity: 1;
+    }
+
+    .about-link:hover .about-middle-link {
+      opacity: 0.3;
+    }
+
+    .about-link:hover .about-bottom-link {
+      transform: translateY(1em);
+    }
+
+    .about-link:hover .about-top-link {
+      transform: translateY(-1em);
+    }
+
+    .about-top-link, .about-bottom-link {
+      opacity: 0;
+    }
+
+    .about-link:hover .about-top-link:hover, .about-link:hover .about-bottom-link:hover {
+      opacity: 0.7;
     }
 
     .exhibition-title-home {
@@ -245,5 +270,16 @@
 
       .swiper-slide p {
         font-size: 1.3em;
+      }
+    }
+
+    @media (pointer:coarse) {
+      .about-top-link, .about-bottom-link {
+        opacity: 1;
+        padding: 1em 0;
+      }
+
+      .about-middle-link {
+        display: none;
       }
     }
