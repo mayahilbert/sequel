@@ -1,0 +1,353 @@
+.topple-text-slide {
+  background: url(assets/sunbg.jpg) bottom right;
+  justify-content: flex-end;
+  background-repeat: no-repeat;
+}
+
+.monster-text-slide {
+  background: url(assets/twobg.jpg);
+  background-size: cover;
+  justify-content: flex-start;
+  background-position: center;
+}
+
+div.swiper-slide.gravity-text-slide {
+  background-color: #151D24;
+}
+
+.swiper-slide.middles-text-slide {
+  background: url(assets/middlesbg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper-slide.boomerang-text-slide {
+  background: url(assets/boomerangbg.jpg);
+  background-size: cover;
+  background-position: center;
+  line-height: 2em;
+}
+
+div.swiper-slide.hand-text-slide {
+  background-color: white;
+}
+
+div.swiper-slide.end-text-slide {
+  background-color: black;
+}
+
+div.swiper-slide.thermodynamics-text-slide {
+  background-color: #493C3C;
+  background-image: url(assets/thermbg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+img.therm-img {
+  height: auto;
+  width: 130px;
+  display: inline;
+  position: absolute;
+  top: 46%;
+}
+
+p.thermodynamics-text {
+  font-size: 2.4em;
+  font-family: 'Bebas Neue';
+  transition: 1s;
+}
+
+p.thermodynamics-text:hover {
+  color: #ad060a
+}
+
+.therm1 {
+  max-width: 400px;
+  position: absolute;
+  top: 0;
+  left: 15%;
+}
+
+.therm2 {
+  max-width: 400px;
+  position: absolute;
+  top: 30%;
+  right: 20%;
+}
+
+.therm3 {
+  position: absolute;
+  bottom: 0;
+  left: 8%;
+  transition: 1s;
+  margin-bottom: 0;
+}
+
+.swiper-slide.boomerang-text-slide p {
+  padding: 0;
+  margin: 0;
+}
+
+p.boomerang-text-1 {
+  filter: blur(2px);
+  opacity: 10%;
+}
+
+p.boomerang-text-2 {
+  filter: blur(1px);
+  opacity: 20%;
+}
+
+p.boomerang-text-3 {
+  filter: blur(0.5px);
+  opacity: 30%;
+}
+
+p.boomerang-text-4 {
+  filter: blur(0.5px);
+  opacity: 50%;
+}
+
+p.boomerang-text-5 {
+  filter: blur(0.5px);
+  opacity: 80%;
+}
+
+p.boomerang-text-6 {
+  font-weight: 600;
+}
+
+p.boomerang-text {
+  font-size: 2em;
+  color: white;
+}
+
+p.end-text {
+  font-size: 2em;
+  opacity: 0.8;
+  line-height: 1.7em;
+  animation: blinker 8s linear infinite;
+  filter: blur(1px);
+  text-transform: lowercase;
+}
+
+@keyframes blinker {
+  0% {
+    opacity: 1;
+  }
+
+  20% {
+    opacity: 0.8;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  60% {
+    opacity: 0.7;
+  }
+
+  70% {
+    opacity: 0.4;
+  }
+
+  80% {
+    opacity: 0.7
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.hand-text-slide div {
+  max-width: 97vw;
+}
+
+div.hand-text {
+  display: flex;
+  text-align: left;
+  color: black;
+  font-size: 6vw;
+  line-height: 6vw;
+  font-family: 'Bebas Neue';
+}
+
+.pinch-line, .push-line {
+  display: flex;
+  margin-bottom: 3vw;
+}
+
+div.push {
+  font-size: 12vw;
+  margin: 1vw 1vw 1vw 1vw;
+  transition: 0.3s;
+}
+
+div.push:hover {
+  font-size: 6vw;
+  transform: translateX(-3vw);
+}
+
+div.pull {
+  font-size: 4vw;
+  margin: 2vw 1vw 1vw 1vw;
+  transition: 0.3s;
+}
+
+div.pull:hover {
+  font-size: 9vw;
+  transform: scaleX(1.3);
+}
+
+div.pinch {
+  font-size: 11vw;
+  margin: -1vw -4vw;
+  transform: scaleX(0.5);
+  transition: 0.2s;
+}
+
+div.pinch:hover {
+  transform: scaleX(0.3) scaleY(1.4);
+  margin-top: 0.5vw;
+}
+
+div.onthe {
+  margin-top: 2vw;
+}
+
+div.then {
+  font-size: 7vw;
+  margin-left: -6vw;
+}
+
+div.suture {
+  font-size: 3.6vw;
+  line-height: 4vw;
+  margin-top: -1.5vw;
+  margin-left: 8vw;
+  transform: scaleX(1.5);
+}
+
+div.screen {
+  border: solid 5px black;
+  color: white;
+  padding: 2vw;
+  background-image: url(assets/twobg.jpg);
+  background-position: center;
+  transition: 1s;
+}
+
+div.screen:hover {
+  filter: invert();
+}
+
+.window-img {
+  opacity: 0;
+  position: absolute;
+  width: 200px;
+  left: 20%;
+  top: -20%;
+  z-index: -1;
+  height: auto;
+}
+
+.suture:hover .window-img {
+  opacity: 1;
+}
+
+p.middles-text {
+  color: black;
+  font-size: 8vw;
+  text-align: left;
+  padding: 2%;
+  font-family: 'Bebas Neue';
+}
+
+p.gravity-text {
+  filter: blur(0.4px);
+  color: #D508D9;
+  font-size: 4em;
+  text-align: center;
+  text-shadow: rgba(255, 255, 255, 0.7) -1.4px -1px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+p.gravity-text>*:hover {
+  color: #115cef;
+  text-shadow: none;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+p.monster-text, p.monster-text-2 {
+  width: 80vw;
+  text-align: left;
+  font-family: 'Bebas Neue';
+  top: 0;
+  padding: 0.8em;
+}
+
+/* p.monster-text-2 {
+  transform: rotate(180deg);
+  padding-top: 4em;
+  color: black;
+} */
+p.topple-text {
+  text-align: center;
+  color: white;
+  font-size: 2em;
+  text-shadow: #000 1px 1px 0.1em;
+  display: flex;
+  width: 4000px;
+}
+
+.swiper-slide.slide-video-link.topple-video {
+  background-color: #745723;
+}
+
+.swiper-slide.slide-video-link.monster-video {
+  background-color: #505140;
+}
+
+.swiper-slide.slide-video-link.gravity-video {
+  background-color: #4b76c0;
+}
+
+.swiper-slide.slide-video-link.middles-video {
+  background-color: #752a0f;
+}
+
+.swiper-slide.slide-video-link.boomerang-video {
+  background-color: #574b38;
+}
+
+.swiper-slide.slide-video-link.end-video {
+  background-color: black;
+}
+
+.swiper-slide.slide-video-link.hand-video {
+  background-color: #c08668;
+}
+
+.swiper-slide.slide-video-link.thermodynamics-video {
+  background-color: #3e555b;
+}
+
+.topple-text>* {
+  width: 100%;
+  display: inline-block;
+  animation: title 15s infinite linear;
+}
+
+@keyframes title {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
