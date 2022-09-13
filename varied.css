@@ -9,6 +9,7 @@
   background-size: cover;
   justify-content: flex-start;
   background-position: center;
+  overflow: hidden;
 }
 
 .video-bg {
