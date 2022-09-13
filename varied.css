@@ -11,14 +11,61 @@
   background-position: center;
 }
 
+.video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.video-bg iframe {
+  width: 100vw;
+  height: 56.25vw;
+  /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+  min-height: 100vh;
+  min-width: 177.77vh;
+  /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.vimeo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.vimeo-wrapper iframe {
+  width: 100vw;
+  height: 56.25vw;
+  /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+  min-height: 100vh;
+  min-width: 177.77vh;
+  /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 div.swiper-slide.gravity-text-slide {
   background-color: #151D24;
+  background: url(assets/gravitybg.jpg);
+  background-size: cover;
 }
 
 .swiper-slide.middles-text-slide {
   background: url(assets/middlesbg.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
 }
 
 .swiper-slide.boomerang-text-slide {
@@ -53,7 +100,6 @@ img.therm-img {
 
 p.thermodynamics-text {
   font-size: 2.4em;
-  font-family: 'Bebas Neue';
   transition: 1s;
 }
 
@@ -246,11 +292,15 @@ div.screen:hover {
 .window-img {
   opacity: 0;
   position: absolute;
-  width: 200px;
-  left: 20%;
-  top: -20%;
+  left: 10%;
+  top: -40%;
   z-index: -1;
-  height: auto;
+}
+
+.window-img img {
+  width: auto;
+  height: 180px;
+  transform: scaleX(0.6);
 }
 
 .suture:hover .window-img {
@@ -270,10 +320,10 @@ p.gravity-text {
   color: #D508D9;
   font-size: 4em;
   text-align: center;
-  text-shadow: rgba(255, 255, 255, 0.7) -1.4px -1px;
-  -webkit-text-stroke-width: 1px;
+  text-shadow: rgba(255, 255, 255, 0.6) -1.9px -1.6px;
+  -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: black;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 p.gravity-text>*:hover {
@@ -285,6 +335,7 @@ p.gravity-text>*:hover {
 
 p.monster-text, p.monster-text-2 {
   width: 80vw;
+  position: absolute;
   text-align: left;
   font-family: 'Bebas Neue';
   top: 0;
@@ -350,5 +401,11 @@ p.topple-text {
 
   100% {
     transform: translateX(-100%);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  p.gravity-text {
+    font-size: 1.7em;
   }
 }
