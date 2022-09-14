@@ -12,6 +12,10 @@
       padding: 0;
     }
 
+    div.hand-text, p.middles-text, p.monster-text, {
+      font-family: 'Bebas Neue', 'Arial Narrow', Helvetica, Arial, sans-serif;
+    }
+
     .vid-container iframe {
       height: 75vh;
       width: 75vw;

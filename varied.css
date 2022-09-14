@@ -224,7 +224,8 @@ div.hand-text {
   color: black;
   font-size: 6vw;
   line-height: 6vw;
-  font-family: 'Bebas Neue', sans-serif;
+  /* font-family: 'Bebas Neue', 'Arial Narrow', sans-serif; */
+  text-transform: uppercase;
 }
 
 .pinch-line, .push-line {
@@ -319,7 +320,8 @@ p.middles-text {
   font-size: 8vw;
   text-align: left;
   padding: 2%;
-  font-family: 'Bebas Neue', sans-serif;
+  /* font-family: 'Bebas Neue', 'Arial Narrow', sans-serif; */
+  text-transform: uppercase;
 }
 
 p.gravity-text {
@@ -344,7 +346,8 @@ p.monster-text, p.monster-text-2 {
   width: 80vw;
   position: absolute;
   text-align: left;
-  font-family: 'Bebas Neue', sans-serif;
+  /* font-family: 'Bebas Neue', 'Arial Narrow', sans-serif; */
+  text-transform: uppercase;
   top: 0;
   padding: 0.8em;
 }
