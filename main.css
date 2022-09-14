@@ -12,7 +12,7 @@
       padding: 0;
     }
 
-    div.hand-text, p.middles-text, p.monster-text, {
+    div.hand-text, p.middles-text, p.monster-text {
       font-family: 'Bebas Neue', 'Arial Narrow', Helvetica, Arial, sans-serif;
     }
 
@@ -88,7 +88,7 @@
       font-size: 3em;
       text-align: left;
       letter-spacing: 0.4px;
-      font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+      /* font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; */
     }
 
     .nav-wrapper {
