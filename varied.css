@@ -228,6 +228,10 @@ div.hand-text {
   text-transform: uppercase;
 }
 
+.hand-text-mobile {
+  display: none;
+}
+
 .pinch-line, .push-line {
   display: flex;
   margin-bottom: 2.4vw;
@@ -416,6 +420,22 @@ p.topple-text {
 }
 
 @media only screen and (max-width: 600px) {
+  .hand-text-mobile {
+    display: block;
+    display: flex;
+    text-align: left;
+    color: black;
+    font-size: 11vw;
+    line-height: 11vw;
+    text-transform: uppercase;
+    padding: 5vh 4vw;
+    color: #E8DBB9;
+  }
+
+  div.hand-text {
+    display: none;
+  }
+
   p.topple-text {
     font-size: 1.5em;
     width: 3000px;
@@ -427,6 +447,7 @@ p.topple-text {
 
   p.monster-text {
     font-size: 2.5em;
+    line-height: 1em;
   }
 
   p.gravity-text {
@@ -466,5 +487,11 @@ p.topple-text {
   .topple-text-slide {
     background-size: cover;
     background-position: center;
+  }
+
+  div.swiper-slide.hand-text-slide {
+    background-image: url(assets/handbg-m.jpg);
+    justify-content: flex-start;
+    background-size: cover;
   }
 }
