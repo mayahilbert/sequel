@@ -322,6 +322,7 @@ p.middles-text {
   padding: 2%;
   /* font-family: 'Bebas Neue', 'Arial Narrow', sans-serif; */
   text-transform: uppercase;
+  max-width: 90vw;
 }
 
 p.gravity-text {
@@ -415,7 +416,55 @@ p.topple-text {
 }
 
 @media only screen and (max-width: 600px) {
+  p.topple-text {
+    font-size: 1.5em;
+    width: 3000px;
+  }
+
+  .topple-text>* {
+    padding-bottom: 0.5em;
+  }
+
+  p.monster-text {
+    font-size: 2.5em;
+  }
+
   p.gravity-text {
     font-size: 1.7em;
+  }
+
+  p.thermodynamics-text {
+    font-size: 2em;
+  }
+
+  .therm3 {
+    bottom: 8%;
+  }
+
+  p.middles-text {
+    font-size: 12vw;
+    padding-top: 20%;
+  }
+
+  p.end-text {
+    font-size: 1.9em;
+  }
+
+  .swiper-slide.boomerang-text-slide p {
+    padding-top: 10vh;
+    color: #E8DBB9;
+  }
+
+  div.swiper-slide.thermodynamics-text-slide {
+    background-position: left;
+  }
+
+  .swiper-slide.boomerang-text-slide {
+    justify-content: flex-start;
+  }
+
+  .topple-text-slide {
+    background-size: cover;
+    background-position: center;
   }
 }
