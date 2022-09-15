@@ -452,6 +452,7 @@ p.topple-text {
 
   p.gravity-text {
     font-size: 1.7em;
+    -webkit-text-stroke-width: 0.6px;
   }
 
   p.thermodynamics-text {
