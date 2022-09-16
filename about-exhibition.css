@@ -2,56 +2,58 @@ html,
 body {
   font-family: 'Bebas Neue', Helvetica, Arial, sans-serif;
   position: relative;
-  height: 100%;  
+  height: 100%;
   background: #fff;
   margin: 1em;
   padding: 0;
 }
 
-.container{
+p {
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+}
+
+.container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
 }
 
-.curatorial-info{
+.curatorial-info {
   display: flex;
   flex-direction: column;
   padding: 1em;
   flex-basis: 100%;
-  flex:1;
+  flex: 1;
 }
 
 .curatorial-header {
   font-size: 7vw;
   text-transform: uppercase;
   line-height: .80em;
-  margin: 0;    
+  margin: 0;
   padding-bottom: .10em;
-
 }
 
-.curatorial-subheader{
+.curatorial-subheader {
   font-size: 3.5vw;
   text-transform: uppercase;
   line-height: .85em;
   margin: 0;
   padding-bottom: .25em;
-  
 }
 
-.curatorial-info img{
+.curatorial-info img {
   max-width: 500px;
   height: auto;
   width: 100%;
 }
 
-.to-exhibition{
+.to-exhibition {
   padding: 1em 1em 0 0;
 }
 
-.to-exhibition a{
+.to-exhibition .to-exhibition-text {
   font-size: 10px;
   text-decoration: none;
   text-transform: uppercase;
@@ -60,22 +62,25 @@ body {
   vertical-align: text-top;
 }
 
-.curatorial-text{
+a {
+  color: black;
+}
+
+.curatorial-text {
   font-size: 1rem;
   flex-direction: column;
   padding: 0em 1em;
   flex-basis: 100%;
-  flex:1;
+  flex: 1;
 }
 
-.curatorial-subtext{
+.curatorial-subtext {
   font-size: .75rem;
   margin-top: 0;
 }
 
 @media screen and (max-width: 600px) {
-  .container{
-      flex-direction: column;
+  .container {
+    flex-direction: column;
   }
-  
 }
