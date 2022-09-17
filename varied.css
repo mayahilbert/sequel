@@ -81,7 +81,7 @@ div.swiper-slide.gravity-text-slide {
 }
 
 div.swiper-slide.hand-text-slide {
-  background: url(assets/boomerangbg.jpg);
+  background: url(assets/pushbg.jpg);
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -470,11 +470,12 @@ p.topple-text {
     display: block;
     display: flex;
     text-align: left;
-    color: black;
+    color: #E8DBB9;
     font-size: 11vw;
     line-height: 11vw;
     text-transform: uppercase;
-    padding: 10vh 4vw;
+    padding: 0 4vw;
+    margin-top: -8vw;
     z-index: 99;
   }
 
@@ -545,7 +546,7 @@ p.topple-text {
   }
 
   div.swiper-slide.hand-text-slide {
-    justify-content: flex-end;
+    justify-content: flex-start;
     background-size: cover;
   }
 }
