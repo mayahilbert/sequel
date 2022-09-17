@@ -2,6 +2,7 @@
   background: url(assets/sunbg.jpg) bottom right;
   justify-content: flex-end;
   background-repeat: no-repeat;
+  background-size:cover;
 }
 
 .monster-text-slide {
