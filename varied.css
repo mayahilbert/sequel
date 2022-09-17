@@ -378,6 +378,7 @@ p.monster-text, p.monster-text-2 {
   text-align: left;
   /* font-family: 'Bebas Neue', 'Arial Narrow', sans-serif; */
   text-transform: uppercase;
+  line-height: 1em;
   top: 0;
   padding: 0.8em;
 }
