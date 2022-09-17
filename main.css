@@ -286,4 +286,12 @@
       .about-middle-link {
         display: none;
       }
+
+      .about-link:hover .about-bottom-link {
+        transform: none;
+      }
+
+      .about-link:hover .about-top-link {
+        transform: none;
+      }
     }
