@@ -468,11 +468,10 @@ p.topple-text {
 @media only screen and (max-width: 600px) {
   .hand-text-mobile {
     display: block;
-    display: flex;
     text-align: left;
     color: #E8DBB9;
-    font-size: 11vw;
-    line-height: 11vw;
+    font-size: 8vw;
+    line-height: 8vw;
     text-transform: uppercase;
     padding: 0 4vw;
     margin-top: -8vw;
