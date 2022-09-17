@@ -54,7 +54,9 @@ p {
 }
 
 .to-exhibition .to-exhibition-text {
-  font-size: 10px;
+  font-size: 16px;
+  line-height: 10px;
+  padding-left: 2px;
   text-decoration: none;
   text-transform: uppercase;
   text-align: end;
@@ -82,5 +84,11 @@ a {
 @media screen and (max-width: 600px) {
   .container {
     flex-direction: column;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .vimeo-wrapper {
+    display: none;
   }
 }
