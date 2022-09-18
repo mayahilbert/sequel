@@ -472,94 +472,95 @@ p.topple-text {
     font-size: 3em;
     width: 5800px;
   }
+}
 
-  @media only screen and (max-width: 800px) {
-    .topple-text-slide {
-      background: url(assets/sunbg-m.jpg) bottom right;
-    }
-
-    .topple-text-slide {
-      background-size: 300%;
-      background-position: 55%;
-    }
+@media only screen and (max-width: 800px) {
+  .topple-text-slide {
+    background: url(assets/sunbg-m.jpg) bottom right;
   }
 
-  @media only screen and (max-width: 600px) {
-    .hand-text-mobile {
-      display: block;
-      text-align: left;
-      color: #E8DBB9;
-      font-size: 8vw;
-      line-height: 8vw;
-      text-transform: uppercase;
-      padding: 0 4vw;
-      margin-top: -8vw;
-      z-index: 99;
-    }
-
-    .hand-text-slide-vimeo {
-      display: none;
-    }
-
-    div.hand-text {
-      display: none;
-    }
-
-    p.topple-text {
-      font-size: 27px;
-      width: 3000px;
-    }
-
-    .topple-text>* {
-      padding-bottom: 0.5em;
-    }
-
-    p.monster-text {
-      font-size: 2.5em;
-      line-height: 1em;
-    }
-
-    p.gravity-text {
-      font-size: 1.7em;
-      -webkit-text-stroke-width: 0.6px;
-    }
-
-    p.thermodynamics-text {
-      font-size: 2em;
-    }
-
-    .therm3 {
-      bottom: 8%;
-    }
-
-    p.middles-text {
-      font-size: 12vw;
-      line-height: 12vw;
-      padding: 0 2% 4vh 2%;
-    }
-
-    p.end-text {
-      font-size: 1.9em;
-    }
-
-    .swiper-slide.boomerang-text-slide p {
-      padding-top: 10vh;
-    }
-
-    div.swiper-slide.thermodynamics-text-slide {
-      background-position: left;
-    }
-
-    div.swiper-slide.middles-text-slide {
-      justify-content: flex-end;
-    }
-
-    .swiper-slide.boomerang-text-slide {
-      justify-content: flex-start;
-    }
-
-    div.swiper-slide.hand-text-slide {
-      justify-content: flex-start;
-      background-size: cover;
-    }
+  .topple-text-slide {
+    background-size: 300%;
+    background-position: 55%;
   }
+}
+
+@media only screen and (max-width: 600px) {
+  .hand-text-mobile {
+    display: block;
+    text-align: left;
+    color: #E8DBB9;
+    font-size: 8vw;
+    line-height: 8vw;
+    text-transform: uppercase;
+    padding: 0 4vw;
+    margin-top: -8vw;
+    z-index: 99;
+  }
+
+  .hand-text-slide-vimeo {
+    display: none;
+  }
+
+  div.hand-text {
+    display: none;
+  }
+
+  p.topple-text {
+    font-size: 27px;
+    width: 3000px;
+  }
+
+  .topple-text>* {
+    padding-bottom: 0.5em;
+  }
+
+  p.monster-text {
+    font-size: 2.5em;
+    line-height: 1em;
+  }
+
+  p.gravity-text {
+    font-size: 1.7em;
+    -webkit-text-stroke-width: 0.6px;
+  }
+
+  p.thermodynamics-text {
+    font-size: 2em;
+  }
+
+  .therm3 {
+    bottom: 8%;
+  }
+
+  p.middles-text {
+    font-size: 12vw;
+    line-height: 12vw;
+    padding: 0 2% 4vh 2%;
+  }
+
+  p.end-text {
+    font-size: 1.9em;
+  }
+
+  .swiper-slide.boomerang-text-slide p {
+    padding-top: 10vh;
+  }
+
+  div.swiper-slide.thermodynamics-text-slide {
+    background-position: left;
+  }
+
+  div.swiper-slide.middles-text-slide {
+    justify-content: flex-end;
+  }
+
+  .swiper-slide.boomerang-text-slide {
+    justify-content: flex-start;
+  }
+
+  div.swiper-slide.hand-text-slide {
+    justify-content: flex-start;
+    background-size: cover;
+  }
+}
