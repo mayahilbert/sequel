@@ -207,6 +207,19 @@
     function nextSlide() {
       swiper.slideNext();
     }
+    swiper.on('slideChange', function() {
+      console.log('slide changed');
+      if (swiper.activeIndex == "16") {
+        slideTextLinks.forEach(slideTextLink => {
+          slideTextLink.style.transform = "rotate(180deg)";
+        });
+      }
+      if (swiper.activeIndex != "16") {
+        slideTextLinks.forEach(slideTextLink => {
+          slideTextLink.style.transform = "rotate(0)";
+        });
+      }
+    });
   </script>
 </body>
 
