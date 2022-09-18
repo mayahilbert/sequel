@@ -474,13 +474,13 @@ p.topple-text {
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1200px) {
   .topple-text-slide {
     background: url(assets/sunbg-m.jpg) bottom right;
   }
 
   .topple-text-slide {
-    background-size: 300%;
+    background-size: cover;
     background-position: 55%;
   }
 }
