@@ -1,3 +1,19 @@
+body {
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .topple-text-slide {
   background: url(assets/sunbg.jpg) bottom right;
   justify-content: flex-end;
