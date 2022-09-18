@@ -2,7 +2,7 @@
   background: url(assets/sunbg.jpg) bottom right;
   justify-content: flex-end;
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
 }
 
 .monster-text-slide {
@@ -467,87 +467,99 @@ p.topple-text {
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .hand-text-mobile {
-    display: block;
-    text-align: left;
-    color: #E8DBB9;
-    font-size: 8vw;
-    line-height: 8vw;
-    text-transform: uppercase;
-    padding: 0 4vw;
-    margin-top: -8vw;
-    z-index: 99;
-  }
-
-  .hand-text-slide-vimeo {
-    display: none;
-  }
-
-  div.hand-text {
-    display: none;
-  }
-
+@media only screen and (min-width: 1920px) {
   p.topple-text {
-    font-size: 1.5em;
-    width: 3000px;
+    font-size: 3em;
+    width: 5800px;
   }
 
-  .topple-text>* {
-    padding-bottom: 0.5em;
+  @media only screen and (max-width: 800px) {
+    .topple-text-slide {
+      background: url(assets/sunbg-m.jpg) bottom right;
+    }
+
+    .topple-text-slide {
+      background-size: 300%;
+      background-position: 55%;
+    }
   }
 
-  p.monster-text {
-    font-size: 2.5em;
-    line-height: 1em;
-  }
+  @media only screen and (max-width: 600px) {
+    .hand-text-mobile {
+      display: block;
+      text-align: left;
+      color: #E8DBB9;
+      font-size: 8vw;
+      line-height: 8vw;
+      text-transform: uppercase;
+      padding: 0 4vw;
+      margin-top: -8vw;
+      z-index: 99;
+    }
 
-  p.gravity-text {
-    font-size: 1.7em;
-    -webkit-text-stroke-width: 0.6px;
-  }
+    .hand-text-slide-vimeo {
+      display: none;
+    }
 
-  p.thermodynamics-text {
-    font-size: 2em;
-  }
+    div.hand-text {
+      display: none;
+    }
 
-  .therm3 {
-    bottom: 8%;
-  }
+    p.topple-text {
+      font-size: 27px;
+      width: 3000px;
+    }
 
-  p.middles-text {
-    font-size: 12vw;
-    line-height: 12vw;
-    padding: 0 2% 4vh 2%;
-  }
+    .topple-text>* {
+      padding-bottom: 0.5em;
+    }
 
-  p.end-text {
-    font-size: 1.9em;
-  }
+    p.monster-text {
+      font-size: 2.5em;
+      line-height: 1em;
+    }
 
-  .swiper-slide.boomerang-text-slide p {
-    padding-top: 10vh;
-  }
+    p.gravity-text {
+      font-size: 1.7em;
+      -webkit-text-stroke-width: 0.6px;
+    }
 
-  div.swiper-slide.thermodynamics-text-slide {
-    background-position: left;
-  }
+    p.thermodynamics-text {
+      font-size: 2em;
+    }
 
-  div.swiper-slide.middles-text-slide {
-    justify-content: flex-end;
-  }
+    .therm3 {
+      bottom: 8%;
+    }
 
-  .swiper-slide.boomerang-text-slide {
-    justify-content: flex-start;
-  }
+    p.middles-text {
+      font-size: 12vw;
+      line-height: 12vw;
+      padding: 0 2% 4vh 2%;
+    }
 
-  .topple-text-slide {
-    background-size: cover;
-    background-position: center;
-  }
+    p.end-text {
+      font-size: 1.9em;
+    }
 
-  div.swiper-slide.hand-text-slide {
-    justify-content: flex-start;
-    background-size: cover;
+    .swiper-slide.boomerang-text-slide p {
+      padding-top: 10vh;
+    }
+
+    div.swiper-slide.thermodynamics-text-slide {
+      background-position: left;
+    }
+
+    div.swiper-slide.middles-text-slide {
+      justify-content: flex-end;
+    }
+
+    .swiper-slide.boomerang-text-slide {
+      justify-content: flex-start;
+    }
+
+    div.swiper-slide.hand-text-slide {
+      justify-content: flex-start;
+      background-size: cover;
+    }
   }
-}
